@@ -1,0 +1,336 @@
+
+/* ======================================
+   $Banner
+   ====================================== */
+
+.custom-banner {
+    padding: 50px 10px 50px;
+    box-sizing: border-box;
+    max-width: 1348px;
+    width: 100%;
+    margin: 20px auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(34, 34, 34, .4);
+    background-image: url(img/call-to-action-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-weight: 600;
+    color: #fff;
+}
+
+.custom-banner > * {
+    flex-shrink: 0;
+}
+
+.banner__logo {
+    display: block;
+    width: 144px;
+    height: 144px;
+    margin-right: 27px;
+}
+
+.banner__discount {
+    display: flex;
+    flex-direction: column;
+   justify-content: space-between;
+}
+
+.banner__main-title {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.banner__span-accent {
+    padding: 5px 4px 6px;
+    background-color: #d83d38;
+}
+
+.banner__span-font-size {
+    font-size: 12px;
+}
+
+.banner__next-title {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    font-weight: 600;
+}
+
+.banner__info {
+    padding-top: 33px;
+    max-width: 210px;
+}
+
+.banner__text {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.78;
+    color: #d0d0d0;
+}
+
+.banner__phone {
+    margin: 0;
+    padding-top: 7px;
+    text-decoration: none;
+    display: inline-block;
+    border-bottom: 1px solid #80312F;
+    font-size: 22px;
+    line-height: 1.21;
+    font-weight: normal;
+    color: #f23c37;
+    opacity: 1;
+    transition: opacity .2s ease-in-out;
+}
+
+.banner__phone:hover,
+.banner__phone:focus {
+    opacity: .7;
+    color: #f23c37;
+}
+
+.banner__arrow {
+    width: 169.1px;
+    height: 130px;
+    background-image: url(img/banner-arrow.svg);
+    background-size: 169.1px 130px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.banner-form__title {
+    margin: 0;
+    padding-bottom: 27px;
+    font-size: 16px;
+    line-height: 1.5625;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.banner-form__overlay {
+    position: relative;
+}
+
+.banner-form__input-title {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: -11px;
+    left: 15px;
+    padding: 0 5px 0;
+    font-size: 14px;
+    line-height: 1.21;
+    font-weight: 500;
+    color: #e3e3e3;
+    background-color: transparent;
+}
+
+.custom-banner .banner-form__input {
+    display: block;
+    margin: 0;
+    padding: 13.5px 0 14.5px 18.5px;
+    width: 359px;
+    border: 1px solid #7C7C7C;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: transparent;
+    clip-path: polygon(0% 0%, 9px 0%, 9px 10%, 52% 10%, 52% 0%, 100% 0%, 100% 100%, 0% 100%);
+    font-size: 14px;
+    line-height: 1.21;
+    font-weight: 500;
+    color: #C1C1C1;
+}
+
+.custom-banner .banner-form__input:focus {
+    background-color: transparent;
+    border-color: #ffffff;
+}
+
+.banner-form__button {
+    width: 360px;
+    padding: 18px 0 17px;
+    margin-top: 10.5px;
+    background: #D83D38;
+    border: none;
+    border-radius: 4px;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 700;
+    cursor: pointer;
+    color: #fff;
+    opacity: 1;
+    transition: opacity .2s ease-in-out;
+}
+
+.banner-form__button:hover {
+    opacity: .7;
+}
+
+.banner-form__button:focus {
+    opacity: .7;
+}
+
+.banner-form__subtitle {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.label-container {
+    display: block;
+    position: relative;
+    padding-left: 26px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 10px;
+    line-height: 1.21;
+    font-weight: normal;
+    color: #d6d6d6;
+}
+
+.container__text {
+    font-weight: 500;
+}
+
+.label-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    box-sizing: border-box;
+    height: 14px;
+    width: 14px;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid #797979;
+}
+
+.label-container:hover input ~ .checkmark {
+    background-color: transparent;
+}
+
+
+.label-container input:checked ~ .checkmark {
+    background-color: transparent;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.label-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.label-container .checkmark:after {
+ 	top: 50%;
+	left: 50%;
+	width: 8px;
+	height: 8px;
+	border-radius: 2px;
+	background: #d83d38;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 1080px) {
+
+    .banner__arrow {
+        display: none;
+    }
+
+    .banner__discount {
+        margin-right: 30px;
+    }
+}
+
+@media (max-width: 925px) {
+
+    .custom-banner {
+        justify-content: flex-start;
+        padding-right: 65px;
+    }
+
+    .banner__logo {
+        margin-right: 5px;
+    }
+
+    .banner__discount {
+        margin-right: 15px;
+    }
+
+    .banner-form {
+        flex-shrink: 1;
+    }
+
+    .custom-banner .banner-form__input {
+        width: auto;
+        min-width: 320px;
+    }
+
+    .banner-form__button {
+        max-width: 320px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .custom-banner {
+        flex-direction: column;
+    }
+
+    .banner__logo {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .banner__discount {
+        margin-right: 0;
+    }
+    .banner__info {
+        padding-top: 10px;
+        margin: 0 auto;
+    }
+    .banner__phone {
+        padding-bottom: 7px;
+        margin-bottom: 10px;
+    }
+
+    .banner__discount {
+        text-align: center;
+    }
+
+    .banner-form__title {
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .custom-banner {
+        padding: 45px 10px;
+    }
+}
