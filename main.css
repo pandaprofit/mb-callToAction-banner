@@ -1,6 +1,6 @@
 
 /* ======================================
-   $Banner
+   $Custom-banner
    ====================================== */
 
 .custom-banner {
@@ -8,10 +8,8 @@
     box-sizing: border-box;
     max-width: 1348px;
     width: 100%;
+    min-height: 291px;
     margin: 20px auto 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: rgb(34, 34, 34, .4);
     background-image: url(img/call-to-action-banner.jpg);
     background-repeat: no-repeat;
@@ -22,7 +20,13 @@
     color: #fff;
 }
 
-.custom-banner > * {
+.custom-banner__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-banner__inner > * {
     flex-shrink: 0;
 }
 
@@ -134,7 +138,7 @@
     background-color: transparent;
 }
 
-.custom-banner .banner-form__input {
+.banner-form__input {
     display: block;
     margin: 0;
     padding: 13.5px 0 14.5px 18.5px;
@@ -150,7 +154,7 @@
     color: #C1C1C1;
 }
 
-.custom-banner .banner-form__input:focus {
+.banner-form__input:focus {
     background-color: transparent;
     border-color: #ffffff;
 }
@@ -255,6 +259,34 @@
     transform: translate(-50%, -50%);
 }
 
+.custom-banner__inner {
+    display: none;
+}
+/* $Thanks
+   ====================================== */
+
+.custom-banner__thanks {
+    /* display: none; */
+    text-align: center;
+}
+
+.custom-banner__thanks-title {
+    margin: 0 0 11px;
+    padding: 0;
+    font-size: 36px;
+    line-height: 43,88px;
+}
+
+.custom-banner__thanks-dsc {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    line-height: 24,38px;
+}
+
+/* $Media
+   ====================================== */
+
 @media (max-width: 1080px) {
 
     .banner__arrow {
@@ -269,8 +301,11 @@
 @media (max-width: 925px) {
 
     .custom-banner {
-        justify-content: flex-start;
         padding-right: 65px;
+    }
+
+    .custom-banner__inner {
+        justify-content: flex-start;
     }
 
     .banner__logo {
@@ -285,7 +320,7 @@
         flex-shrink: 1;
     }
 
-    .custom-banner .banner-form__input {
+    .banner-form__input {
         width: auto;
         min-width: 320px;
     }
@@ -298,7 +333,7 @@
 
 @media (max-width: 800px) {
 
-    .custom-banner {
+    .custom-banner__inner {
         flex-direction: column;
     }
 
